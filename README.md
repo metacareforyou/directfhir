@@ -24,11 +24,11 @@ A Simple Express-NodeJS Personal [FHIR Server](https://www.hl7.org/fhir/) that r
 -  create a shell executable called directfhir with just the node command
 ```Copy-Item -Path (Get-Command node).Source -Destination directfhir.exe```
 - inject the blob into the server
-```npx postject directfhir.exe NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2 Copy-Item -Path (Get-Command node).Source```
+```npx postject directfhir.exe NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2```
 - Now you can run the server
 ```C:\Program Files\Metacare\directfhir.exe```
 
-### Mac
+### Mac (still does not quite work) 
 - Load the sea config and create a blob
 ```node --experimental-sea-config sea-config.json```
 -  create a shell executable called directfhir with just the node command
